@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+body {
+    font-size: 28px;
+    font-weight: 800;
+    font-family: 'Manrope', sans-serif;
+    color: var(--cyan);
+    background-color: var(--dark-blue);
+}
+.fraction {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fraction-header {
+    margin-bottom: 24px;
+    font-size: 72px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+.advice {
+    max-width: 600px;
+    margin-bottom: 120px;
+    border-radius: 16px;
+    padding: 48px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--dark-grayish-blue);
+    position: relative;
+}
+.advice-header {
+    margin-bottom: 24px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3.5px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--neon-green);
+}
+.advice-container {
+    max-height: 600px;
+    margin-bottom: 36px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    color: var(--cyan);
+}
+.pattern-divider {
+    margin-bottom: 20px;
+}
+.advice-submit {
+    bottom: -3.5vh;
+    padding: 18px;
+    outline: none;
+    border: none;
+    border-radius: 50em;
+    cursor: pointer;
+    position: absolute;
+    background-color: var(--neon-green);
+}
+.advice-submit:active {
+    transition: all .15s ease;
+    background-color: hsla(150, 100%, 66%, .45);
+}
+.advice-submit:hover {
+    transition: all .25s ease;
+    box-shadow: 0 0 25px var(--neon-green);
+}
